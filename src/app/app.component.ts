@@ -14,6 +14,7 @@ export class AppComponent {
     this.keyword = keyword;
   }
   deleteArticle(item: any) {
+    console.log(item);
     let i = this.data.indexOf(item);
     this.data.splice(i, 1);
   }
