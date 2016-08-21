@@ -77,8 +77,8 @@
           <div class="widget-content">
             <div id="searchbox">
               <!--#keywordInput為HTMLInputElement為全域都可使用-->
-              <input type="text" #keywordInput (keyup.enter)="doSearch(keywordInput)" [value]="keyword"  placeholder="請輸入搜尋關鍵字" accesskey="s">
-              <input type="button" value="搜尋" id="searchbutton" (click)="doSearch(keywordInput)">
+              <input type="text" #keywordInput (keyup.enter)="doSearch(keywordInput.value)" [value]="keyword"  placeholder="請輸入搜尋關鍵字" accesskey="s">
+              <input type="button" value="搜尋" id="searchbutton" (click)="doSearch(keywordInput.value)">
             </div>
             {{keyword}}
           </div>

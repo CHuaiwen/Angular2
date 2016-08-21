@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   keyword = 'Test';
 
-  doSearch(inputDOM: HTMLInputElement) {
-      this.keyword = inputDOM.value;
+  doSearch(keyword: string) {
+      this.keyword = keyword;
   }
 }
