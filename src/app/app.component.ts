@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  keyword = '';
+  keyword = 'Test';
   doSearch($event: KeyboardEvent) {
     console.log($event);
     //.target代表$event的主體標籤(節點)，是一個HTMLInputElement
