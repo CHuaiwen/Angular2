@@ -35,7 +35,7 @@
         [ngClass]="getClass()"
         (click)="AddNum($event)"
         style="display: inline-block;"></h3>
-        <span>+{{num}}</span>
+        <span>+{{num|tochinesenumber:true}}</span>
       </hgroup>
 
       <div id="social-icons" class="pull-right social-icon" *ngIf="num % 2 == 0">
