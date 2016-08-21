@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
+  title = 'The Will Will Web!';
+  test2 = 'qwe';
   keyword = 'Test';
 
   doSearch(keyword: string) {
