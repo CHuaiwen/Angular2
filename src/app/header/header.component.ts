@@ -23,4 +23,10 @@ export class HeaderComponent implements OnInit {
       this.num += 1;
     }
   }
+  getClass(){
+    return {
+      'red': this.num%2==1,
+      'blue':this.num%2==0
+    };
+  }
 }
