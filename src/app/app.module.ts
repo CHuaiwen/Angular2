@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ArticleComponent } from './article/article.component';
 import { ToChineseNumberPipe } from './tochinesenumber.pipe';
 import { HttpModule } from '@angular/http';
+import { DataService } from './data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { HttpModule } from '@angular/http';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })
